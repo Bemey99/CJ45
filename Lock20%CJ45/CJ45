@@ -47,7 +47,7 @@ gui.Name = "patrickGui"
 gui.Parent = game.CoreGui
 
 local TextButton = Instance.new("TextButton")
-TextButton.Text = "Toggle CJ45 CamLock"
+TextButton.Text = "Toggle Aura X CamLock"
 TextButton.TextSize = 24
 TextButton.TextColor3 = Color3.new(1, 1, 1)
 TextButton.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -60,11 +60,11 @@ local state = true
 TextButton.MouseButton1Click:Connect (function()
     state = not state
     if not state then
-        TextButton.Text = "CJ45 Lock ON"
+        TextButton.Text = "Aura X Lock ON"
         CamlockState = true
         enemy = FindNearestEnemy()
     else
-        TextButton.Text = "CJ45 Lock OFF"
+        TextButton.Text = "Aura X Lock OFF"
         CamlockState = false
         enemy = nil
     end
